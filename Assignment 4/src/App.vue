@@ -6,18 +6,20 @@ import GregoryLeibnizPi from './components/GregoryLeibnizPi.vue';
 
 <template>
   <div class="container">
-
-    <div class="cosin-calc">
-      <CosineLaw />
-    </div>
-    <div class="asymp-finder">
-      <AsymptoteFinder />
-    </div>
-    <div class="gregory-approx">
-      <GregoryLeibnizPi />
-    </div>
-
+    <CosineLaw />
+    <AsymptoteFinder />
+    <GregoryLeibnizPi />
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.container {
+  font-family: monospace, sans-serif;
+  display: flex;
+  justify-content: center; 
+  height: 100vh;
+  flex-wrap: wrap;
+  gap: 120px;
+  padding: 40px;
+}
+</style>
